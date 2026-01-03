@@ -20,30 +20,32 @@ class Auth extends CI_Controller {
 
     public function aksi_login()
     {
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
+    $username = $this->input->post('username');
+    $password = $this->input->post('password');
 
-        $where = array(
-            'username' => $username,
-            'password' => $password
+    $where = array(
+        'username' => $username,
+        'password' => $password
+    );
+
+    $query = $this->UserModel->cek_login("users", $where);
+    if($query->num_rows() > 0){
+        $user_data = $query->row();
+
+        $data_session = array(
+            'id'       => $user_data->id, 
+            'username' => $user_data->username,
+            'status'   => "login"
         );
 
-        $cek = $this->UserModel->cek_login("users", $where)->num_rows();
+        $this->session->set_userdata($data_session);
 
-        if($cek > 0){
-            $data_session = array(
-                'username' => $username,
-                'status' => "login"
-            );
-
-            $this->session->set_userdata($data_session);
-
-            redirect(base_url("Admin"));
-        } else {
-            echo "Username dan password salah !";
-            redirect(base_url('auth'));
-        }
+        redirect(base_url("Admin"));
+    } else {
+        $this->session->set_flashdata('error', 'Username atau Password salah!');
+        redirect(base_url('auth'));
     }
+}
 
     public function aksi_registrasi() {
         $this->form_validation->set_rules('username', 'Username', 'required|is_unique[users.username]');

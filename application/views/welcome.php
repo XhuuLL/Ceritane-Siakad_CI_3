@@ -363,9 +363,11 @@
                     Mewujudkan ekosistem digital akademik yang inovatif bagi seluruh civitas akademika UMUS Brebes. Mengedepankan kemudahan akses dan akurasi data informasi.
                 </p>
                 <div class="mt-4">
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/fatkhul.png?igsh=MTlxamRuNWM3MXF0Mw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1CxjXGgtwK/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@xhuulhehe" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/XhuuLL" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://my-portofolio-xhuull.vercel.app/" class="social-link"><i class="fas fa-globe"></i></a>
                 </div>
             </div>
 
@@ -405,6 +407,7 @@
             <div class="col-md-6 text-md-right text-center">
                 <a href="#" class="small text-muted mx-3 text-decoration-none">Kebijakan Privasi</a>
                 <a href="#" class="small text-muted mx-3 text-decoration-none">Syarat & Ketentuan</a>
+                <a href="https://github.com/XhuuLL/Belajar-CodeIgniter.git"><i class="fa-brands fa-github"></i> Source Code</a>
             </div>
         </div>
     </div>

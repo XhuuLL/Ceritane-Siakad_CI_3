@@ -34,7 +34,7 @@
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
         <a class="dropdown-item" href="#">Profile</a>
-        <a class="dropdown-item" href="#">Settings</a>
+        <a class="dropdown-item" href="<?php echo site_url('SettingC/ganti_password') ?>">Settings</a>
         <a class="dropdown-item text-danger" href="<?= base_url('home') ?>">Logout</a>
       </div>
     </li>

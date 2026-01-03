@@ -29,7 +29,7 @@
         </p>
         <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item dropdown">
-                <a href="#ui-elements" class="nav-link">
+                <a href="<?php echo site_url('DosenC') ?>" class="nav-link">
                     <i class="fe fe-users"></i>
                     <span class="ml-3 item-text">Dosen</span>
                 </a>
@@ -41,7 +41,7 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a href="#ui-elements" class="nav-link">
+                <a href="<?php echo site_url('DosenWaliC') ?>" class="nav-link">
                     <i class="fe fe-user"></i>
                     <span class="ml-3 item-text">Dosen Wali</span>
                 </a>
@@ -95,7 +95,7 @@
         </p>
         <ul class="navbar-nav flex-fill w-100 mb-2">
             <li class="nav-item dropdown">
-                <a href="#ui-elements" class="nav-link">
+                <a href="<?php echo site_url('SettingC/ganti_password') ?>" class="nav-link">
                     <i class="fe fe-lock"></i>
                     <span class="ml-3 item-text">Ganti Password</span>
                 </a>
